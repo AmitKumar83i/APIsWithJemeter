@@ -1,0 +1,2346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="3.2" jmeter="3.3 r1808647">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Mobelisk Project Team" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath">C:\Users\amit.k\Downloads\apache-jmeter-3.3\apache-jmeter-3.3\bin\ApacheJMeter.jar,C:\Users\amit.k\Downloads\apache-jmeter-3.3\apache-jmeter-3.3\bin\poi-3.17.jar,C:\Users\amit.k\Downloads\apache-jmeter-3.3\apache-jmeter-3.3\bin\poi-examples-3.17.jar,C:\Users\amit.k\Downloads\apache-jmeter-3.3\apache-jmeter-3.3\bin\poi-excelant-3.17.jar,C:\Users\amit.k\Downloads\apache-jmeter-3.3\apache-jmeter-3.3\bin\poi-ooxml-3.17.jar,C:\Users\amit.k\Downloads\apache-jmeter-3.3\apache-jmeter-3.3\bin\poi-ooxml-schemas-3.17.jar,C:\Users\amit.k\Downloads\apache-jmeter-3.3\apache-jmeter-3.3\bin\poi-scratchpad-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\poi-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\poi-examples-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\poi-excelant-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\poi-ooxml-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\poi-ooxml-schemas-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\poi-scratchpad-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\commons-codec-1.10.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\commons-collections4-4.1.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\commons-logging-1.2.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\junit-4.12.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\log4j-1.2.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\poi-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\poi-examples-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\poi-excelant-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\poi-ooxml-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\poi-ooxml-schemas-3.17.jar,C:\Users\amit.k\Downloads\poi-bin-3.17-20170915\poi-3.17\lib\poi-scratchpad-3.17.jar</stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group for Mobelisk Project" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1531303798000</longProp>
+        <longProp name="ThreadGroup.end_time">1531303798000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="url" elementType="Argument">
+              <stringProp name="Argument.name">url</stringProp>
+              <stringProp name="Argument.value">beta3secure.mobelisk.net</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">Application URL to test</stringProp>
+            </elementProp>
+            <elementProp name="mobeliskSN" elementType="Argument">
+              <stringProp name="Argument.name">mobeliskSN</stringProp>
+              <stringProp name="Argument.value">GQ4DMMJSGNDQSABCAAYQ</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">Case ID</stringProp>
+            </elementProp>
+            <elementProp name="H" elementType="Argument">
+              <stringProp name="Argument.name">H</stringProp>
+              <stringProp name="Argument.value">https</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="simiccid" elementType="Argument">
+              <stringProp name="Argument.name">simiccid</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="USER" elementType="Argument">
+              <stringProp name="Argument.name">USER</stringProp>
+              <stringProp name="Argument.value">Amandeep.philips05@gmail.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="SIMICCID" elementType="Argument">
+              <stringProp name="Argument.name">SIMICCID</stringProp>
+              <stringProp name="Argument.value">simiccid</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="DEVICEID" elementType="Argument">
+              <stringProp name="Argument.name">DEVICEID</stringProp>
+              <stringProp name="Argument.value">40288</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ORGID" elementType="Argument">
+              <stringProp name="Argument.name">ORGID</stringProp>
+              <stringProp name="Argument.value">27</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="DAYSID" elementType="Argument">
+              <stringProp name="Argument.name">DAYSID</stringProp>
+              <stringProp name="Argument.value">3</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="EVENTID" elementType="Argument">
+              <stringProp name="Argument.name">EVENTID</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="YEARMONTH" elementType="Argument">
+              <stringProp name="Argument.name">YEARMONTH</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="ISSUETYPE" elementType="Argument">
+              <stringProp name="Argument.name">ISSUETYPE</stringProp>
+              <stringProp name="Argument.value">2</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="client_id" elementType="Argument">
+              <stringProp name="Argument.name">client_id</stringProp>
+              <stringProp name="Argument.value">31382149-d8be-11e7-9d50-16238f1d6812</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="client_secret" elementType="Argument">
+              <stringProp name="Argument.name">client_secret</stringProp>
+              <stringProp name="Argument.value">31382166-d8be-11e7-9d50-16238f1d6812</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="grant_type" elementType="Argument">
+              <stringProp name="Argument.name">grant_type</stringProp>
+              <stringProp name="Argument.value">password</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="password" elementType="Argument">
+              <stringProp name="Argument.name">password</stringProp>
+              <stringProp name="Argument.value">Passw0rd1234</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="username" elementType="Argument">
+              <stringProp name="Argument.name">username</stringProp>
+              <stringProp name="Argument.value">annupmore@gmail.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PageNumber" elementType="Argument">
+              <stringProp name="Argument.name">PageNumber</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="RecordsPerPage" elementType="Argument">
+              <stringProp name="Argument.name">RecordsPerPage</stringProp>
+              <stringProp name="Argument.value">10</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="RecordsToBeRemoved" elementType="Argument">
+              <stringProp name="Argument.name">RecordsToBeRemoved</stringProp>
+              <stringProp name="Argument.value">1</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="USERID" elementType="Argument">
+              <stringProp name="Argument.name">USERID</stringProp>
+              <stringProp name="Argument.value">184</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="shockArray" elementType="Argument">
+              <stringProp name="Argument.name">shockArray</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="false">
+          <stringProp name="filename">C:\TestData\Alldevices.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">SerialNumber</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/json</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Response of this request give token[POST Call]" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="client_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">client_id</stringProp>
+                <stringProp name="Argument.value">${client_id}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="client_secret" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">client_secret</stringProp>
+                <stringProp name="Argument.value">${client_secret}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="grant_type" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">grant_type</stringProp>
+                <stringProp name="Argument.value">${grant_type}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="password" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">password</stringProp>
+                <stringProp name="Argument.value">${password}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="username" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">username</stringProp>
+                <stringProp name="Argument.value">${username}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/oauth/token</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>5.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=utf-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor to extract Token" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">access_token</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..access_token</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">65445</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">60000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AllDevices" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;user&quot;:&quot;&quot;,&quot;mobeliskSerialNumber&quot;:&quot;&quot;,&quot;serialNumber&quot;:&quot;&quot;,&quot;simiccid&quot;:&quot;&quot;,&quot;pageNumber&quot;:1,&quot;recordsPerPage&quot;:1000}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/device/myDeviceSearch/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.9</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">JWT ${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">devices</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..data</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="ShockEventsData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;daysId&quot;:${DAYSID},&quot;recordsPerPage&quot;:10000,&quot;pageNumber&quot;:1,&quot;recordsToBeRemoved&quot;:0,&quot;eventId&quot;:&quot;&quot;,&quot;eventTime&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;year_month&quot;:null}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/shockEvent/listByDays/</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">bearer${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">shockEvents</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..numberOfDropEvents</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+File file1 = new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;); 
+file1.delete();
+String FILE_NAME = &quot;D:/JmeterFiles/Mobelisk.xlsx&quot;;
+int rownumber=1;
+XSSFWorkbook workbook = new XSSFWorkbook();
+XSSFSheet sheet = workbook.createSheet(&quot;Shocks&quot;);
+//XSSFSheet sheet1 = workbook.createSheet(&quot;Datatype1&quot;);
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Shocks Present or Not&quot;);
+        Row row = sheet.createRow(rownumber++);
+        Cell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+ FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+            workbook.write(outputStream);
+            workbook.close();
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">3000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="2nd BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+//String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber1=0;
+FileInputStream fsIP= new FileInputStream(new File(&quot;D:/JmeterFiles/jmeterBean.xlsx&quot;));
+XSSFWorkbook workbook = new XSSFWorkbook(fsIP);
+//XSSFSheet sheet = workbook.getSheetAt(1);
+XSSFSheet sheet = workbook.createSheet(&quot;Amit&quot;);
+
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        XSSFRow row1 = sheet.createRow(rownumber1++);
+        XSSFCell cell = row1.createCell(0);
+        Cell cell1 = row1.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+    fsIP.close();
+ FileOutputStream fos =new FileOutputStream(new File(&quot;D:/JmeterFiles/jmeterBean.xlsx&quot;));
+  workbook.write(fos);
+  fos.close();
+System.out.println(&quot;Done&quot;);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OperationTimeData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;daysId&quot;:${DAYSID},&quot;recordsPerPage&quot;:10000,&quot;pageNumber&quot;:1,&quot;recordsToBeRemoved&quot;:0,&quot;eventId&quot;:&quot;&quot;,&quot;eventTime&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;year_month&quot;:null}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/operationTime/listByDays</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">bearer${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">operationTimes</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..numberOfDropEvents</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber=1;
+XSSFWorkbook workbook = new XSSFWorkbook();
+XSSFSheet sheet = workbook.createSheet(&quot;Shocks&quot;);
+//XSSFSheet sheet1 = workbook.createSheet(&quot;Datatype1&quot;);
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Shocks Present or Not&quot;);
+        Row row = sheet.createRow(rownumber++);
+        Cell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+ FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+            workbook.write(outputStream);
+            workbook.close();
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="2nd BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  operationTimes = new JSONArray (vars.get(&quot;operationTimes&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; operationTimes.length(); i++)
+{
+      JSONObject operationTime = operationTimes.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(operationTime.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(operationTime.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Operation Time not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Operation Time present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+//String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber1=0;
+FileInputStream fsIP= new FileInputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+XSSFWorkbook workbook = new XSSFWorkbook(fsIP);
+//XSSFSheet sheet = workbook.getSheetAt(1);
+XSSFSheet sheet = workbook.createSheet(&quot;OperationT&quot;);
+
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Operation Time Present or Not&quot;);
+        XSSFRow row = sheet.createRow(rownumber1++);
+        XSSFCell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+    fsIP.close();
+ FileOutputStream fos =new FileOutputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+  workbook.write(fos);
+  fos.close();
+System.out.println(&quot;Done&quot;);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="DistanceTravelledData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;daysId&quot;:${DAYSID},&quot;recordsPerPage&quot;:10000,&quot;pageNumber&quot;:1,&quot;recordsToBeRemoved&quot;:0,&quot;eventId&quot;:&quot;&quot;,&quot;eventTime&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;year_month&quot;:null}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/operationTime/listByDays</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">bearer${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">distanceTravels</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..numberOfDropEvents</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber=1;
+XSSFWorkbook workbook = new XSSFWorkbook();
+XSSFSheet sheet = workbook.createSheet(&quot;Shocks&quot;);
+//XSSFSheet sheet1 = workbook.createSheet(&quot;Datatype1&quot;);
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Shocks Present or Not&quot;);
+        Row row = sheet.createRow(rownumber++);
+        Cell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+ FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+            workbook.write(outputStream);
+            workbook.close();
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  distanceTravels = new JSONArray (vars.get(&quot;distanceTravels&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; distanceTravels.length(); i++)
+{
+      JSONObject distanceTravel = distanceTravels.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(distanceTravel.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(distanceTravel.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Distance Travelled Data not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Distance Travelled Data present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+//String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber1=0;
+FileInputStream fsIP= new FileInputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+XSSFWorkbook workbook = new XSSFWorkbook(fsIP);
+//XSSFSheet sheet = workbook.getSheetAt(1);
+XSSFSheet sheet = workbook.createSheet(&quot;DistanceTra&quot;);
+
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Distance Travelled Data Present or Not&quot;);
+        XSSFRow row = sheet.createRow(rownumber1++);
+        XSSFCell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+    fsIP.close();
+ FileOutputStream fos =new FileOutputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+  workbook.write(fos);
+  fos.close();
+System.out.println(&quot;Done&quot;);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="BarCodeScanData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;daysId&quot;:${DAYSID},&quot;recordsPerPage&quot;:10000,&quot;pageNumber&quot;:1,&quot;recordsToBeRemoved&quot;:0,&quot;eventId&quot;:&quot;&quot;,&quot;eventTime&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;year_month&quot;:null}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/barcodeScan/listByDays</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">bearer${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">barcodeScans</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..numberOfDropEvents</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber=1;
+XSSFWorkbook workbook = new XSSFWorkbook();
+XSSFSheet sheet = workbook.createSheet(&quot;Shocks&quot;);
+//XSSFSheet sheet1 = workbook.createSheet(&quot;Datatype1&quot;);
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Shocks Present or Not&quot;);
+        Row row = sheet.createRow(rownumber++);
+        Cell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+ FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+            workbook.write(outputStream);
+            workbook.close();
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  barcodeScans = new JSONArray (vars.get(&quot;barcodeScans&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; barcodeScans.length(); i++)
+{
+      JSONObject barcodeScan = barcodeScans.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(barcodeScan.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(barcodeScan.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Barcode Data not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Barcode Data present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+//String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber1=0;
+FileInputStream fsIP= new FileInputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+XSSFWorkbook workbook = new XSSFWorkbook(fsIP);
+//XSSFSheet sheet = workbook.getSheetAt(1);
+XSSFSheet sheet = workbook.createSheet(&quot;BarCode&quot;);
+
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;BarCode Data Present or Not&quot;);
+        XSSFRow row = sheet.createRow(rownumber1++);
+        XSSFCell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+    fsIP.close();
+ FileOutputStream fos =new FileOutputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+  workbook.write(fos);
+  fos.close();
+System.out.println(&quot;Done&quot;);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HeatIndexData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;daysId&quot;:${DAYSID},&quot;recordsPerPage&quot;:10000,&quot;pageNumber&quot;:1,&quot;recordsToBeRemoved&quot;:0,&quot;eventId&quot;:&quot;&quot;,&quot;eventTime&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;year_month&quot;:null}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/barcodeScan/listByDays</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">bearer${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">heatIndexes</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..numberOfDropEvents</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber=1;
+XSSFWorkbook workbook = new XSSFWorkbook();
+XSSFSheet sheet = workbook.createSheet(&quot;Shocks&quot;);
+//XSSFSheet sheet1 = workbook.createSheet(&quot;Datatype1&quot;);
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Shocks Present or Not&quot;);
+        Row row = sheet.createRow(rownumber++);
+        Cell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+ FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+            workbook.write(outputStream);
+            workbook.close();
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  heatIndexes = new JSONArray (vars.get(&quot;heatIndexes&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; heatIndexes.length(); i++)
+{
+      JSONObject heatIndexe = heatIndexes.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(heatIndexe.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(heatIndexe.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;HeatIndex Data not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;HeatIndex Data present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+//String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber1=0;
+FileInputStream fsIP= new FileInputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+XSSFWorkbook workbook = new XSSFWorkbook(fsIP);
+//XSSFSheet sheet = workbook.getSheetAt(1);
+XSSFSheet sheet = workbook.createSheet(&quot;HeatIndex&quot;);
+
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;HeatIndex Data Present or Not&quot;);
+        XSSFRow row = sheet.createRow(rownumber1++);
+        XSSFCell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+    fsIP.close();
+ FileOutputStream fos =new FileOutputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+  workbook.write(fos);
+  fos.close();
+System.out.println(&quot;Done&quot;);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="WorkingEnvironmentData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;daysId&quot;:${DAYSID},&quot;recordsPerPage&quot;:10000,&quot;pageNumber&quot;:1,&quot;recordsToBeRemoved&quot;:0,&quot;eventId&quot;:&quot;&quot;,&quot;eventTime&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;year_month&quot;:null}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/barcodeScan/listByDays</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">bearer${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">workingEnvironments</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..numberOfDropEvents</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber=1;
+XSSFWorkbook workbook = new XSSFWorkbook();
+XSSFSheet sheet = workbook.createSheet(&quot;Shocks&quot;);
+//XSSFSheet sheet1 = workbook.createSheet(&quot;Datatype1&quot;);
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Shocks Present or Not&quot;);
+        Row row = sheet.createRow(rownumber++);
+        Cell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+ FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+            workbook.write(outputStream);
+            workbook.close();
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  workingEnvironments = new JSONArray (vars.get(&quot;workingEnvironments&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; workingEnvironments.length(); i++)
+{
+      JSONObject workingEnvironment = workingEnvironments.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(workingEnvironment.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(workingEnvironment.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Working Environment Data not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Working Environment Data present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+//String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber1=0;
+FileInputStream fsIP= new FileInputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+XSSFWorkbook workbook = new XSSFWorkbook(fsIP);
+//XSSFSheet sheet = workbook.getSheetAt(1);
+XSSFSheet sheet = workbook.createSheet(&quot;WorkingEnv&quot;);
+
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;WorkingEnvironment Data Present or Not&quot;);
+        XSSFRow row = sheet.createRow(rownumber1++);
+        XSSFCell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+    fsIP.close();
+ FileOutputStream fos =new FileOutputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+  workbook.write(fos);
+  fos.close();
+System.out.println(&quot;Done&quot;);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="BaroPressureData" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;daysId&quot;:${DAYSID},&quot;recordsPerPage&quot;:10000,&quot;pageNumber&quot;:1,&quot;recordsToBeRemoved&quot;:0,&quot;eventId&quot;:&quot;&quot;,&quot;eventTime&quot;:null,&quot;startDate&quot;:null,&quot;endDate&quot;:null,&quot;year_month&quot;:null}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${url}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">${H}</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/mobelisk-web-cloud/rest/barometricPressureNAltitude/listByDays</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net/</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US,en;q=0.5</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://docs.mobelisk.net</stringProp>
+              </elementProp>
+              <elementProp name="Content-type" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Authorization</stringProp>
+                <stringProp name="Header.value">bearer${access_token}</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="false">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="1594697561">id&quot;:183</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable"></stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+            <stringProp name="JSONPostProcessor.referenceNames">baroPressures</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$..data</stringProp>
+            <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">NoValues</stringProp>
+          </JSONPostProcessor>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="false">
+            <stringProp name="ConstantTimer.delay">72000</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="false">
+            <doubleProp>
+              <name>throughput</name>
+              <value>1.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <intProp name="calcMode">0</intProp>
+          </ConstantThroughputTimer>
+          <hashTree/>
+          <com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion guiclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.gui.JSONPathAssertionGui" testclass="com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion" testname="jp@gc - JSON Path Assertion" enabled="false">
+            <stringProp name="JSON_PATH">$..numberOfDropEvents</stringProp>
+            <stringProp name="EXPECTED_VALUE">0</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">true</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </com.atlantbh.jmeter.plugins.jsonutils.jsonpathassertion.JSONPathAssertion>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="false">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  shockEvents = new JSONArray (vars.get(&quot;shockEvents&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; shockEvents.length(); i++)
+{
+      JSONObject shockEvent = shockEvents.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(shockEvent.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(shockEvent.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Shocks present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber=1;
+XSSFWorkbook workbook = new XSSFWorkbook();
+XSSFSheet sheet = workbook.createSheet(&quot;Shocks&quot;);
+//XSSFSheet sheet1 = workbook.createSheet(&quot;Datatype1&quot;);
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Shocks Present or Not&quot;);
+        Row row = sheet.createRow(rownumber++);
+        Cell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+ FileOutputStream outputStream = new FileOutputStream(FILE_NAME);
+            workbook.write(outputStream);
+            workbook.close();
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+          <BeanShellPostProcessor guiclass="TestBeanGUI" testclass="BeanShellPostProcessor" testname="BeanShell PostProcessor" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"></stringProp>
+            <stringProp name="filename"></stringProp>
+            <stringProp name="script">import org.json.JSONObject;
+import org.json.JSONArray;
+import java.io.file;
+import org.apache.jmeter.services.FileServer;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+JSONArray  devices = new JSONArray (vars.get(&quot;devices&quot;)); 
+JSONArray  baroPressures = new JSONArray (vars.get(&quot;baroPressures&quot;)); 
+
+HashMap shockCount = new HashMap();
+for(int i = 0; i &lt; baroPressures.length(); i++)
+{
+      JSONObject baroPressure = baroPressures.getJSONObject(i);
+
+      Integer count = (Integer) shockCount.get(baroPressure.get(&quot;basecaseSerialNumber&quot;));
+	     if(count == null){
+	     	count = 0 ;
+	     }else{
+	     	count++;
+	     }
+      shockCount.put(baroPressure.get(&quot;basecaseSerialNumber&quot;), count);
+      //System.out.print(shockEvent.get(&quot;basecaseSerialNumber&quot;)+&quot; &quot;+count);
+}
+
+HashMap deviceReport = new HashMap();
+//System.out.println(&quot;devices.length()&quot;+&quot; &quot;+devices.length());
+for(int i = 0; i &lt; devices.length(); i++)
+{
+	JSONObject device = devices.getJSONObject(i);
+	JSONObject baseCase = device.getJSONObject(&quot;baseCase&quot;);
+	//System.out.print(baseCase.toString());
+
+	Integer count = (Integer) shockCount.get(baseCase.get(&quot;serialNumber&quot;));
+	     if(count == null){
+	     	 deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Barometric Pressure Data not present&quot;);
+	     	 //System.out.print(device.toStr	ing()+&quot; &quot;+&quot;not present&quot;);
+	     }else{
+	     	deviceReport.put(baseCase.get(&quot;serialNumber&quot;),&quot;Barometric Pressure Data present&quot;);
+	     	 //System.out.print(device.toString()+&quot; &quot;+&quot;present&quot;);
+	     	  //System.out.println(baseCase.get(&quot;serialNumber&quot;)+&quot; &quot;+count);
+	     }
+	 
+}
+//File file1 = new File(&quot;D:/JmeterFiles/jmeterBean.csv&quot;); 
+//file1.delete();
+//String FILE_NAME = &quot;D:/JmeterFiles/jmeterBean.xlsx&quot;;
+int rownumber1=0;
+FileInputStream fsIP= new FileInputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+XSSFWorkbook workbook = new XSSFWorkbook(fsIP);
+//XSSFSheet sheet = workbook.getSheetAt(1);
+XSSFSheet sheet = workbook.createSheet(&quot;BaroPres&quot;);
+
+Iterator it = deviceReport.entrySet().iterator();
+    while (it.hasNext()) {
+        Map.Entry pair = (Map.Entry)it.next();
+        System.out.println(pair.getKey() + &quot; = &quot; + pair.getValue());
+        Row row1 = sheet.createRow(0);
+        Cell cellx = row1.createCell(0);
+        Cell celly = row1.createCell(1);
+        cellx.setCellValue(&quot;Device SerialNumber&quot;);
+        celly.setCellValue(&quot;Barometric Pressure Data Present or Not&quot;);
+        XSSFRow row = sheet.createRow(rownumber1++);
+        XSSFCell cell = row.createCell(0);
+        Cell cell1 = row.createCell(1);
+        cell.setCellValue(pair.getKey());
+        cell1.setCellValue(pair.getValue());
+        
+        //p.println(pair.getKey()+&quot;,&quot;+pair.getValue());
+        it.remove(); // avoids a ConcurrentModificationException
+    }
+    fsIP.close();
+ FileOutputStream fos =new FileOutputStream(new File(&quot;D:/JmeterFiles/Mobelisk.xlsx&quot;));
+  workbook.write(fos);
+  fos.close();
+System.out.println(&quot;Done&quot;);
+</stringProp>
+          </BeanShellPostProcessor>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+    <WorkBench guiclass="WorkBenchGui" testclass="WorkBench" testname="WorkBench" enabled="true">
+      <boolProp name="WorkBench.save">true</boolProp>
+    </WorkBench>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
